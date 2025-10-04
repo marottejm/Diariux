@@ -1,0 +1,9 @@
+# Copia este contenido a un archivo llamado .env.local en la raíz del proyecto
+# 
+# 1. Ve a https://web3forms.com/
+# 2. Ingresa tu email: info@diariux.com
+# 3. Copia el Access Key que te dan
+# 4. Pégalo aquí abajo (reemplaza "tu-access-key-aqui")
+# 5. Guarda este contenido en un archivo llamado .env.local
+
+NEXT_PUBLIC_WEB3FORMS_KEY=tu-access-key-aqui

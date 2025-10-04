@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Diariux - Agencia de Inteligencia Artificial
 
-## Getting Started
+Sitio web moderno para Diariux, agencia de IA especializada en automatización de procesos empresariales en Argentina.
 
-First, run the development server:
+## 🚀 Tecnologías
+
+- **Next.js 15** - Framework React con SSR
+- **TypeScript** - Tipado estático
+- **Tailwind CSS** - Estilos modernos y responsivos
+- **Framer Motion** - Animaciones fluidas
+- **Lucide React** - Iconos modernos
+
+## 📦 Instalación
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Construir para producción
+npm run build
+
+# Ejecutar en producción
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Características
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- ✅ Diseño moderno y profesional
+- ✅ Totalmente responsivo (mobile, tablet, desktop)
+- ✅ Animaciones suaves y atractivas
+- ✅ Optimizado para SEO
+- ✅ Sistema de traducción integrado
+- ✅ Componentes reutilizables
+- ✅ Gradientes y efectos modernos
+- ✅ Navegación fluida entre secciones
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 Estructura del Proyecto
 
-## Learn More
+```
+diariux/
+├── app/
+│   ├── layout.tsx          # Layout principal
+│   ├── page.tsx            # Página principal
+│   └── globals.css         # Estilos globales
+├── components/
+│   ├── Navbar.tsx          # Barra de navegación
+│   ├── Hero.tsx            # Sección hero
+│   ├── About.tsx           # Sobre nosotros
+│   ├── Services.tsx        # Servicios
+│   ├── Benefits.tsx        # Beneficios
+│   ├── Methodology.tsx     # Metodología
+│   ├── CTA.tsx             # Call to action
+│   └── Footer.tsx          # Pie de página
+├── lib/
+│   └── translations.ts     # Sistema de traducción
+└── public/                 # Archivos estáticos
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Secciones
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Hero** - Presentación impactante con estadísticas
+2. **About** - Información sobre la agencia
+3. **Services** - 6 servicios principales de IA
+4. **Benefits** - 6 ventajas estratégicas
+5. **Methodology** - Proceso de trabajo en 4 fases
+6. **CTA** - Formulario de contacto
+7. **Footer** - Información de contacto y enlaces
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌐 Configuración
 
-## Deploy on Vercel
+El sitio está configurado para el mercado argentino con:
+- Contenido en español
+- Referencias a Argentina y Latinoamérica
+- Paleta de colores profesional (azul y violeta)
+- Diseño moderno inspirado en tendencias 2024/2025
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📱 Responsive Design
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Mobile: < 768px
+- Tablet: 768px - 1024px
+- Desktop: > 1024px
+
+## 🔧 Personalización
+
+Para personalizar el contenido, edita el archivo `lib/translations.ts`.
+Para cambiar los colores, modifica `tailwind.config.ts`.
+
+## 📄 Licencia
+
+© 2025 Diariux. Todos los derechos reservados.
+
+

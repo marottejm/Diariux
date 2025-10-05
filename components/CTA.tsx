@@ -25,6 +25,10 @@ export default function CTA() {
       formObject[key] = value.toString();
     });
     
+    // 🔍 LOG 1: Ver qué se está enviando
+    console.log('📤 Enviando formulario:', formObject);
+    console.log('🔑 Access Key:', formObject.access_key ? '✅ Presente' : '❌ FALTA');
+    
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -36,6 +40,10 @@ export default function CTA() {
       });
 
       const data = await response.json();
+      
+      // 🔍 LOG 2: Ver la respuesta de Web3Forms
+      console.log('📥 Respuesta de Web3Forms:', data);
+      console.log('🔍 Status:', response.status);
 
       if (data.success) {
         setSubmitStatus('success');
@@ -46,11 +54,11 @@ export default function CTA() {
           setSubmitStatus('idle');
         }, 5000);
       } else {
-        console.error('Web3Forms error:', data);
+        console.error('❌ Web3Forms rechazó el formulario:', data);
         setSubmitStatus('error');
       }
     } catch (error) {
-      console.error('Error al enviar formulario:', error);
+      console.error('❌ Error de red o servidor:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);

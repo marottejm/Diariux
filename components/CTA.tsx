@@ -18,7 +18,7 @@ export default function CTA() {
     
     // Convertir FormData a objeto JSON
     const formObject: Record<string, string> = {
-      access_key: '517fe19e-3b19-44f3-8d9e-6e1fb97f5b95',
+      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '',
     };
     
     formData.forEach((value, key) => {

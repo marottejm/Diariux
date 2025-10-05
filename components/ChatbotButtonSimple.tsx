@@ -84,7 +84,7 @@ export default function ChatbotButtonSimple() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          message: inputMessage,
+          chatInput: inputMessage,
           sessionId: getSessionId(),
         }),
       });

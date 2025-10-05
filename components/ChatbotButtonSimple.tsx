@@ -43,17 +43,31 @@ export default function ChatbotButtonSimple() {
         )}
       </button>
 
-      {/* Ventana del chat */}
+      {/* Ventana del chat con n8n */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-96 h-96 bg-white rounded-2xl shadow-2xl border border-gray-200 p-4">
-          <div className="flex justify-between items-center mb-4">
-            <h3 className="font-bold text-lg">Chat con IA</h3>
-            <button onClick={toggleChat}>
+        <div className="fixed bottom-24 right-6 w-[400px] h-[600px] bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden flex flex-col">
+          {/* Header */}
+          <div className="flex justify-between items-center p-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+            <div className="flex items-center space-x-2">
+              <MessageCircle className="w-5 h-5" />
+              <h3 className="font-bold text-lg">Asistente IA Diariux</h3>
+            </div>
+            <button 
+              onClick={toggleChat}
+              className="hover:bg-white/20 p-1 rounded transition-colors"
+            >
               <X className="w-5 h-5" />
             </button>
           </div>
-          <div className="text-center text-gray-600">
-            Chatbot en configuración...
+          
+          {/* Chat iframe */}
+          <div className="flex-1 relative">
+            <iframe
+              src="https://n8n.srv1044380.hstgr.cloud/workflow/oBFCYfmRR4tMvASS"
+              className="w-full h-full border-0"
+              title="Chatbot Diariux"
+              allow="clipboard-write"
+            />
           </div>
         </div>
       )}

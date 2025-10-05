@@ -63,7 +63,7 @@ export default function ChatbotButtonSimple() {
           {/* Chat iframe */}
           <div className="flex-1 relative">
             <iframe
-              src="https://n8n.srv1044380.hstgr.cloud/workflow/oBFCYfmRR4tMvASS"
+              src="https://n8n.srv1044380.hstgr.cloud/webhook/5f1c0c82-0ff9-40c7-9e2e-b1a96ffe24cd/chat"
               className="w-full h-full border-0"
               title="Chatbot Diariux"
               allow="clipboard-write"

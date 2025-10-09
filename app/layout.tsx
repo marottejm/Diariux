@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import ChatbotButton from '@/components/ChatbotButtonSimple';
+// import ChatbotButton from '@/components/ChatbotButtonSimple';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={inter.className}>
         {children}
-        <ChatbotButton />
+        {/* <ChatbotButton /> */}
       </body>
     </html>
   );
